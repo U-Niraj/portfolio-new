@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #00C9FF, #92FE9D);
+    font-family: 'Arial', sans-serif; 
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  
+  button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Added filter transition */
+    cursor: pointer; 
+  }
+  
+  
+  #newDelhiButton {
+    background: linear-gradient(to right, #4CAF50, #92FF9D);
+    color: white;
+    animation: pulse 1s infinite alternate; 
+  }
+  
+  #newYorkButton {
+    background: linear-gradient(to right, #FF5733, #FFB34A);
+    color: white;
+    animation: rotate 2s linear infinite; 
+  }
+  
+  #londonButton {
+    background: linear-gradient(to right, #FFC300, #FFEF9F);
+    color: white;
+    animation: bounce 1s infinite alternate; 
+  }
+  
+  #tokyoButton {
+    background: linear-gradient(to right, #4A90E2, #96C6E7);
+    color: white;
+    animation: colorchange 2s infinite; 
+  }
+  
+  #parisButton {
+    background: linear-gradient(to right, #FF5733, #FFB34A);
+    color: white;
+    animation: pulse 1.5s infinite alternate; 
+  }
+  
+  
+  #newDelhiButton:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  #newYorkButton:hover {
+    transform: scale(1.2); 
+  }
+  
+  #londonButton:hover {
+    opacity: 0.8;
+    border: 2px solid #FFC300; 
+  }
+  
+  #tokyoButton:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  #parisButton:hover {
+    transform: translateY(-5px); 
+    filter: contrast(150%) brightness(120%) saturate(120%); 
+  }
+  
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    100% { transform: scale(1.1); }
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+  }
+  
+  @keyframes colorchange {
+    0% { background-color: #4A90E2; }
+    50% { background-color: #96C6E7; }
+    100% { background-color: #4A90E2; }
+  }

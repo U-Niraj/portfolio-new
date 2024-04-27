@@ -1,0 +1,133 @@
+table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 50px; /* Adds a gap between cells */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    background: linear-gradient(135deg, #3498db, #8e44ad); /* Gradient background */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  button {
+    width: 250px; /* Adjust button width */
+    height: 250px; /* Adjust button height */
+    background-color: transparent; /* Transparent button background */
+    border: none; /* Remove button border */
+    border-radius: 50%; /* Round button into a circle */
+    cursor: pointer; /* Show pointer cursor on hover */
+    transition: transform 0.2s ease-in-out; /* Smooth scaling */
+    font-size: 18px; /* Button text size */
+    font-weight: bold; /* Button text weight */
+    color: #fff; /* Button text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Button text shadow */
+  }
+  .btn1 {
+    background: linear-gradient(135deg, #FF512F, #DD2476); /* Gradient background */
+    animation: pulseButton1 1s linear infinite alternate; /* Continuous pulse animation */
+    font-family: 'Arial', sans-serif; /* Button text font family */
+    text-decoration: overline;
+  }
+  .btn1:hover {
+    transform: scale(1.1); /* Scale up on hover */
+  }
+  .btn2 {
+    background: linear-gradient(135deg, #43CBFF, #9708CC); /* Gradient background */
+    animation: rotateButton2 2s linear infinite; /* Continuous rotation animation */
+    font-family: 'Times New Roman', serif; /* Button text font family */
+    text-decoration: underline dotted rgb(198, 133, 21) 10px;
+  }
+  .btn2:hover {
+    transform: scale(1.1) rotate(15deg); /* Scale up and rotate on hover */
+    text-decoration: line-through double rgba(0, 0, 0, 0.1);
+  }
+  .btn3 {
+    background: linear-gradient(135deg, #FC4A1A, #F7B733); /* Gradient background */
+    animation: bounceButton3 0.5s linear infinite alternate; /* Continuous bounce animation */
+    font-family: 'Courier New', monospace; /* Button text font family */
+    text-decoration: overline solid rosybrown 25px;
+  }
+  .btn3:hover {
+    transform: scale(1.1) translateY(-20px); /* Scale up and move up on hover */
+    text-decoration: underline overline wavy rebeccapurple;
+  }
+  .btn4 {
+    background: linear-gradient(135deg, #FF5F6D, #FFC371); /* Gradient background */
+    animation: rotateButton4 2s linear infinite; /* Continuous rotation animation */
+    font-family: 'Verdana', sans-serif; /* Button text font family */
+    text-shadow: horizontal ;
+  }
+  .btn4:hover {
+    transform: scale(1.1) rotate(-15deg); /* Scale up and rotate on hover */
+  }
+  .btn5 {
+    background: linear-gradient(135deg, #3CA55C, #B5AC49); /* Gradient background */
+    animation: shakeButton5 0.5s linear infinite alternate; /* Continuous shake animation */
+    font-family: 'Georgia', serif; /* Button text font family */
+  }
+  .btn5:hover {
+    transform: scale(1.1) translateY(20px); /* Scale up and move down on hover */
+  }
+  .btn6 {
+    background: linear-gradient(135deg, #FFD319, #FF9813); /* Gradient background */
+    animation: rotateButton6 1s linear infinite alternate; /* Continuous rotation animation */
+    font-family: 'Impact', sans-serif; /* Button text font family */
+  }
+  .btn6:hover {
+    transform: scale(1.1) rotate(10deg); /* Scale up and rotate on hover */
+  }
+  table:hover {
+    transform: scale(1.05); /* Scale up on hover */
+  }
+  
+  @keyframes pulseButton1 {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+  
+  @keyframes rotateButton2 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes bounceButton3 {
+    0% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes rotateButton4 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes shakeButton5 {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+  
+  @keyframes rotateButton6 {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(-360deg);
+    }
+  }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exam Registration Form</title>
+</head>
+<body>
+
+<h2>Exam Registration Form</h2>
+
+<form action="/submit" method="post" enctype="multipart/form-data">
+  <label for="full_name">Full Name:</label><br>
+  <input type="text" id="full_name" name="full_name" required><br><br>
+  
+  <label for="student_id_number">Student ID Number:</label><br>
+  <input type="text" id="student_id_number" name="student_id_number" required><br><br>
+  
+  <label for="student_id_image">Upload Student ID Image:</label><br>
+  <input type="file" id="student_id_image" name="student_id_image" accept="image/*" required><br><br>
+  
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" required><br><br>
+  
+  <label for="phone">Phone Number:</label><br>
+  <input type="tel" id="phone" name="phone" required><br><br>
+  
+  <label for="gender">Gender:</label><br>
+  <input type="radio" id="gender_male" name="gender" value="male">
+  <label for="gender_male">Male</label>
+  <input type="radio" id="gender_female" name="gender" value="female">
+  <label for="gender_female">Female</label><br><br>
+  
+  <label for="dob">Date of Birth:</label><br>
+  <input type="date" id="dob" name="dob" required><br><br>
+  
+  <label for="address">Address:</label><br>
+  <textarea id="address" name="address" rows="4" required></textarea><br><br>
+  
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city" required><br><br>
+  
+  <label for="state">State:</label><br>
+  <input type="text" id="state" name="state" required><br><br>
+  
+  <label for="zip_code">Zip Code:</label><br>
+  <input type="text" id="zip_code" name="zip_code" required><br><br>
+  
+  <label for="exam_date">Preferred Exam Date:</label><br>
+  <input type="date" id="exam_date" name="exam_date" required><br><br>
+  
+  <label for="exam_subject">Exam Subject:</label><br>
+  <select id="exam_subject" name="exam_subject" required>
+    <option value="">Select Subject</option>
+    <option value="cse">Computer Science Engineering (CSE)</option>
+    <option value="it">Information Technology (IT)</option>
+    <option value="extc">Electronics and Telecommunication Engineering (EXTC)</option>
+    <option value="elpo">Electrical Power Engineering (ELPO)</option>
+    <option value="mech">Mechanical Engineering (MECH)</option>
+  </select><br><br>
+  
+  <label for="payment_method">Payment Method:</label><br>
+  <input type="radio" id="payment_method_upi" name="payment_method" value="upi" required>
+  <label for="payment_method_upi">UPI</label><br>
+  <input type="radio" id="payment_method_credit" name="payment_method" value="credit_card" required>
+  <label for="payment_method_credit">Credit Card</label>
+  <input type="radio" id="payment_method_paypal" name="payment_method" value="paypal" required>
+  <label for="payment_method_paypal">PayPal</label><br><br>
+  
+  <label for="exam_center">Preferred Exam Center (in Vidarbha):</label><br>
+  <select id="exam_center" name="exam_center" required>
+    <option value="">Select Center</option>
+    <option value="Nagpur">Nagpur</option>
+    <option value="Amravati">Amravati</option>
+    <option value="Akola">Akola</option>
+    <option value="Yavatmal">Yavatmal</option>
+    <option value="Chandrapur">Chandrapur</option>
+    <option value="Gondia">Gondia</option>
+    <option value="Wardha">Wardha</option>
+    <option value="Bhandara">Bhandara</option>
+    <option value="Washim">Washim</option>
+    <option value="Gadchiroli">Gadchiroli</option>
+    <option value="Buldhana">Buldhana</option>
+  </select><br><br>
+  
+  <label for="previous_exam_score">Previous Exam Score (if any):</label><br>
+  <input type="text" id="previous_exam_score" name="previous_exam_score"><br><br>
+  
+  <label for="comments">Comments:</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+  
+  <label for="terms_conditions">
+    <input type="checkbox" id="terms_conditions" name="terms_conditions" required>
+    I agree to the terms and conditions
+  </label><br><br>
+  
+  <input type="submit" value="Register">
+</form>
+
+</body>
+</html>
